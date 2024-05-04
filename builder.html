@@ -82,6 +82,24 @@
   <div>
    Main page
   </div>
+	 <script src="https://editor.unlayer.com/embed.js"></script>
+<div id="editor"></div>
+<script>
+  unlayer.init({
+    id: 'editor',
+    projectId: 230618,
+    displayMode: 'email'
+
+  });
+  function myFunction() {
+  unlayer.saveDesign(function(design) {
+  console.log('design', design);
+});
+
+}
+  
+</script>
+<button onclick="myFunction()">Click me</button>
  </body>
 </html>
 </html>
