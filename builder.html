@@ -97,9 +97,19 @@
 });
 
 }
+function exportHtml(){
+	unlayer.exportHtml(function(data) {
+    var json = data.design; // design json
+    var html = data.html; // design html
+	console.log("json",json);
+		console.log("html",html);
+    // Save the json, or html here
+  });
+}
   
 </script>
 <button onclick="myFunction()">Click me</button>
+	 <button onclick="exportHtml()">export html</button>
  </body>
 </html>
 </html>
